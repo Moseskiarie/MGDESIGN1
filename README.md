@@ -1,1 +1,1 @@
-a premium interior design and painting service based in Nakuru, Kenya, led by Moses Gikonyo. This project showcases our commitment to transforming ordinary spaces into extraordinary environments through creativity, quality, and professionalism.
+A premium interior design and painting service based in Nakuru, Kenya, led by Moses Gikonyo. This project showcases our commitment to transforming ordinary spaces into extraordinary environments through creativity, quality, and professionalism.
