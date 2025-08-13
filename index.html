@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moses Gikonyo | Premium Interior Design & Painting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #d4a017;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        .active-nav:after {
+            width: 100%;
+        }
+        .floating-btn {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-3xl font-bold text-amber-800 tracking-tight">MG<span class="text-gray-800">Design</span></div>
+                <div class="hidden md:flex space-x-10">
+                    <a href="#home" class="nav-link text-gray-800 hover:text-amber-600 transition">Home</a>
+                    <a href="#about" class="nav-link text-gray-800 hover:text-amber-600 transition">About</a>
+                    <a href="#services" class="nav-link text-gray-800 hover:text-amber-600 transition">Services</a>
+                    <a href="#gallery" class="nav-link text-gray-800 hover:text-amber-600 transition">Portfolio</a>
+                    <a href="#testimonials" class="nav-link text-gray-800 hover:text-amber-600 transition">Testimonials</a>
+                    <a href="#contact" class="nav-link text-gray-800 hover:text-amber-600 transition">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="menu-btn">
+                    <i class="fas fa-bars text-2xl text-gray-800"></i>
+                </button>
+            </div>
+            <div class="md:hidden hidden flex-col space-y-4 mt-4 py-4 border-t border-gray-100" id="mobile-menu">
+                <a href="#home" class="nav-link text-gray-800 hover:text-amber-600 transition">Home</a>
+                <a href="#about" class="nav-link text-gray-800 hover:text-amber-600 transition">About</a>
+                <a href="#services" class="nav-link text-gray-800 hover:text-amber-600 transition">Services</a>
+                <a href="#gallery" class="nav-link text-gray-800 hover:text-amber-600 transition">Portfolio</a>
+                <a href="#testimonials" class="nav-link text-gray-800 hover:text-amber-600 transition">Testimonials</a>
+                <a href="#contact" class="nav-link text-gray-800 hover:text-amber-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1470&q=80"
+                 alt="Luxury interior design"
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="mb-8">
+                <span class="text-amber-500 font-semibold tracking-widest text-sm uppercase">Premium Interior Design</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">Crafting <span class="text-amber-400">Elegant</span> Spaces</h1>
+            <h2 class="text-xl md:text-2xl mb-8 text-white/90 font-light max-w-2xl mx-auto">Transforming your vision into beautifully designed interiors with precision and artistry</h2>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mt-12">
+                <a href="#contact" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 px-10 rounded-full text-lg transition duration-300 inline-flex items-center justify-center gap-2">
+                    <i class="fas fa-paint-roller"></i> Get Your Quote
+                </a>
+                <a href="#gallery" class="bg-white/10 hover:bg-white/20 text-white font-bold py-4 px-10 rounded-full text-lg transition duration-300 inline-flex items-center justify-center gap-2 border border-white">
+                    <i class="fas fa-images"></i> View Portfolio
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+            <a href="#about" class="floating-btn inline-block bg-white text-amber-600 p-3 rounded-full shadow-lg">
+                <i class="fas fa-chevron-down text-xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="min-h-screen flex items-center justify-center bg-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center md:items-start gap-12">
+            <div class="md:w-1/2 flex justify-center">
+               <img 
+              src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&w=1200&q=80"
+              alt="Moses Gikonyo painting"
+              class="rounded-3xl shadow-xl mx-auto w-full max-w-xl h-96 object-cover object-center"
+            />
+            </div>
+            <div class="md:w-1/2 text-gray-700">
+                <h2 class="text-4xl font-bold mb-4">About Me </h2>
+                <p class="text-lg mb-4">With over 9+ years of dedicated experience in the interior design and painting industry, I've cultivated a reputation for excellence in transforming ordinary spaces into extraordinary environments. My passion is evident in every project, from residential homes to commercial spaces.</p>
+                <ul class="mb-6 space-y-2">
+                    <li><strong>9+ years experience</strong> in painting and interior design</li>
+                    <li><strong>100+ completed projects</strong> in Nakuru</li>
+                    <li><strong>Passionate team</strong> of craftsmen and designers</li>
+                </ul>
+                <a href="#contact" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full text-lg transition">Schedule a Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Example service cards -->
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <i class="fas fa-paint-brush text-5xl text-amber-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Painting & Finishes</h3>
+                    <p>Premium wall and ceiling painting, custom colors, and finishes for every space.</p>
+                </div>
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <i class="fas fa-border-all text-5xl text-amber-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Wall Treatments</h3>
+                    <p>Wallpaper, textured panels, feature walls, and creative wall decor.</p>
+                </div>
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <i class="fas fa-lightbulb text-5xl text-amber-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Ceiling Solutions</h3>
+                    <p>Beautiful, durable Ceiling options that complement your design aesthetic and lifestyle needs.</p>
+                </div>
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <i class="fas fa-couch text-5xl text-amber-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Space Styling Consultation</h3>
+                    <p>Complete interior design ideas to create cohesive, beautiful spaces that reflect your personality.</p>
+                </div>
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <i class="fas fa-home text-5xl text-amber-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Complete Interiors</h3>
+                    <p>Full-service interior transformation from concept to completion.</p>
+                </div>
+                <div class="service-card bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <i class="fas fa-tools text-5xl text-amber-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Renovations</h3>
+                    <p>Makeovers, repairs, and upgrades for every part of your property.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Gallery -->
+   <section id="gallery" class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-12">Portfolio</h2>
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+                <img src="https://images.pexels.com/photos/11701153/pexels-photo-11701153.jpeg?auto=compress&w=600&q=80" alt="Living Room Project" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h4 class="font-bold text-lg mb-2">Modern Living Room</h4>
+                    <p>Stylish living room transformation with a big screen and cozy ambiance.</p>
+                </div>
+            </div>
+            <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+                <img src="https://images.pexels.com/photos/6538932/pexels-photo-6538932.jpeg?auto=compress&w=600&q=80" alt="Kitchen Cabinets" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h4 class="font-bold text-lg mb-2">Kitchen Cabinets Design</h4>
+                    <p>Elegant kitchen interior featuring black marble island and custom cabinetry.</p>
+                </div>
+            </div>
+            <div class="gallery-item rounded-xl shadow-lg overflow-hidden">
+                <img src="https://images.pexels.com/photos/1669799/pexels-photo-1669799.jpeg?auto=compress&w=600&q=80" alt="Ceiling Designs" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h4 class="font-bold text-lg mb-2">Modern Ceiling Designs</h4>
+                    <p>Contemporary ceiling with creative lighting for a luxurious feel.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Testimonials</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <i class="fas fa-quote-left text-amber-600 text-3xl mb-4"></i>
+                    <p class="mb-4">"Moses transformed our entire home with his incredible eye for detail and color. His wall finishes are works of art, and the paint job is flawless. We couldn't be happier!"</p>
+                    <div class="font-bold text-lg text-amber-700">Jane K.</div>
+                    <div class="mt-2 text-yellow-400">★★★★★</div>
+                </div>
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <i class="fas fa-quote-left text-amber-600 text-3xl mb-4"></i>
+                    <p class="mb-4">"Working with Moses was a pleasure from start to finish. He took our vague ideas and turned them into a beautiful exterior reality. His team was professional, efficient and clean."</p>
+                    <div class="font-bold text-lg text-amber-700">Dalmas O.</div>
+                    <div class="mt-2 text-yellow-400">★★★★★</div>
+                </div>
+                <div class="testimonial-card bg-white p-8 rounded-2xl shadow-lg text-center">
+                    <i class="fas fa-quote-left text-amber-600 text-3xl mb-4"></i>
+                    <p class="mb-4">"The before-and-after of our home space is unbelievable. Moses understood exactly what we needed to create a professional yet inviting atmosphere. "</p>
+                    <div class="font-bold text-lg text-amber-700">Isaac</div>
+                    <div class="mt-2 text-yellow-400">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <form class="bg-gray-50 p-8 rounded-2xl shadow-lg">
+                    <div class="mb-6">
+                        <label class="block font-bold mb-2">Name</label>
+                        <input type="text" class="contact-input w-full px-4 py-2 rounded focus:outline-none" placeholder="Your Name">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block font-bold mb-2">Email</label>
+                        <input type="email" class="contact-input w-full px-4 py-2 rounded focus:outline-none" placeholder="Your Email">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block font-bold mb-2">Phone</label>
+                        <input type="tel" class="contact-input w-full px-4 py-2 rounded focus:outline-none" placeholder="Your Phone">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block font-bold mb-2">Service</label>
+                        <select class="contact-input w-full px-4 py-2 rounded focus:outline-none">
+                            <option>Professional Painting</option>
+                            <option>Wall Treatments</option>
+                            <option>ceiling Solutions</option>
+                            <option>Space Styling</option>
+                            <option>Complete Interiors</option>
+                            <option>Renovations</option>
+                        </select>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block font-bold mb-2">Message</label>
+                        <textarea class="contact-input w-full px-4 py-2 rounded focus:outline-none" rows="4" placeholder="Tell us about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-full text-lg transition">Send Message</button>
+                </form>
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">MG Design</h3>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt text-amber-600 mr-2"></i> Nakuru, Kenya</p>
+                    <p class="mb-2"><i class="fas fa-phone text-amber-600 mr-2"></i> +254 706127846</p>
+                    <p class="mb-2"><i class="fas fa-envelope text-amber-600 mr-2"></i> gikonyomoses685@gmail.com</p>
+                    <hr class="my-6">
+                    <h4 class="font-bold mb-2">Consultation Hours:</h4>
+                    <p>Mon-Fri: 8am - 6pm<br>Sat: 9am - 2pm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-amber-800 text-white py-10 mt-24">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0 text-2xl font-bold">MG Design</div>
+            <div class="flex gap-6">
+                <a href="#home" class="hover:underline">Home</a>
+                <a href="#about" class="hover:underline">About</a>
+                <a href="#services" class="hover:underline">Services</a>
+                <a href="#gallery" class="hover:underline">Portfolio</a>
+                <a href="#contact" class="hover:underline">Contact</a>
+            </div>
+            <div class="mt-6 md:mt-0">
+                &copy; 2025 MG Design. All rights reserved. | <a href="#" class="hover:underline">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
